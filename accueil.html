@@ -1,11 +1,279 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UNCHK</title>
+    <link rel="stylesheet" href="td.css">
+    <script src="td.js" defer></script>
 </head>
 <body>
-    
+    <header class="menu">
+        <a class="logo" href="#">
+            <img src="images/Logo.png" alt="Logo">
+
+        </a>
+        <nav class="navigation" aria-label="Navigation principale">
+            <a class="actif" href="#">Accueil</a>
+            <a href="#">Institution <span aria-hidden="true"></span></a>
+            <a href="#">Formations <span aria-hidden="true"></span></a>
+            <a href="#">Actualités</a>
+            <a href="#">Recherche <span aria-hidden="true"></span></a>
+            <a href="#">Vie étudiante <span aria-hidden="true"></span></a>
+            <a href="#">Service à la communauté <span aria-hidden="true"></span></a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="actions">
+            <button class="etiquette" type="button">Menu</button>
+            <button class="hamburger" type="button" aria-label="Ouvrir le menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <button class="recherche" type="button" aria-label="Rechercher">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="10.5" cy="10.5" r="6.5"></circle>
+                    <path d="m15.5 15.5 5 5"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <section aria-label="Contenu principal">
+        <section class="diaporama" aria-label="Actualités de l'UN-CHK">
+            <img class="diapositive" src="images/image.png" alt="Rapport de synthèse sur l'intelligence artificielle dans l'enseignement supérieur sénégalais">
+            <button class="flecheprecedente" type="button" aria-label="Diapositive précédente">
+                ‹
+            </button>
+            <button class="flechesuivante" type="button" aria-label="Diapositive suivante">
+                ›
+            </button>
+        </section>
+
+        <section class="raccourcis" aria-label="Accès rapides">
+            <div class="cartes">
+                <a class="raccourciformation" href="#">
+                    <svg class="icone" viewBox="0 0 48 48" aria-hidden="true">
+                        <path d="M24 15c-5-4-12-5-20-3v25c8-2 15-1 20 3V15Zm0 0c5-4 12-5 20-3v25c-8-2-15-1-20 3V15Z" fill="currentColor"/>
+                        <circle cx="24" cy="7" r="6" fill="currentColor"/>
+                    </svg>
+                    <h2>Nos formations</h2>
+                    <span class="direction" aria-hidden="true">→</span>
+                </a>
+
+                <a class="raccourciadmission" href="#">
+                    <svg class="icone" viewBox="0 0 48 48" aria-hidden="true">
+                        <path d="M4 12a4 4 0 0 1 4-4h12l5 6h15a4 4 0 0 1 4 4v2H17a6 6 0 0 0-5 3L4 35V12Z" fill="currentColor"/>
+                        <path d="M14 24a4 4 0 0 1 3-2h27l-9 16a5 5 0 0 1-4 2H5l9-16Z" fill="currentColor"/>
+                    </svg>
+                    <h2>Admission</h2>
+                    <span class="direction" aria-hidden="true">→</span>
+                </a>
+            </div>
+
+            <nav class="liens" aria-label="Découvrir l'université">
+                <a href="#">Vision</a>
+                <a href="#">Valeurs</a>
+                <a href="#">Axes stratégiques</a>
+            </nav>
+        </section>
+
+        <section class="actualites" aria-labelledby="titre-actualites">
+            <div class="entete">
+                <h2 id="titre-actualites">Actualités</h2>
+            </div>
+
+            <div class="corps">
+                <div class="principal">
+                    <div class="articles">
+                        <article class="actualite">
+                            <a
+                                class="photo" href="#" aria-label="Lire l'actualité : Rappel à Dieu de M. Cheikh Hamidou KANE">
+                                <img src="images/CHK26.png" alt="Portrait de Cheikh Hamidou KANE">
+                            </a>
+                            <div class="contenu">
+                                <h3>
+                                    <a href="#">
+                                        Rappel à Dieu de M. Cheikh Hamidou KANE, parrain de l’UN-CHK
+                                    </a>
+                                </h3>
+                                <time datetime="2026-10-04">4 octobre 2026</time>
+                                <p>
+                                    L'Université numérique Cheikh Hamidou KANE a appris avec une profonde affliction le rappel à Dieu de son illustre parrain.
+                                </p>
+                                <a class="suite" href="#">
+                                    Lire la suite <span aria-hidden="true">→</span>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="actualiteouya">
+                            <a
+                                class="photo" href="#" aria-label="Lire l'actualité : Pr Samuel OUYA nommé président de commission">
+                                <img src="images/OUYA.jpeg" alt="Portrait du professeur Samuel OUYA">
+                            </a>
+                            <div class="contenu">
+                                <h3>
+                                    <a href="#">
+                                        Pr Samuel OUYA, nommé président de la commission « Innovations pédagogiques, Transition numérique et IA » de la C2R d'Afrique de l'Ouest
+                                    </a>
+                                </h3>
+                                <time datetime="2026-10-02">2 octobre 2026</time>
+                                <p>
+                                    Le professeur Samuel OUYA a été nommé à la présidence de cette commission de la C2R d'Afrique de l'Ouest.
+                                </p>
+                                <a class="suite" href="#">
+                                    Lire la suite <span aria-hidden="true">→</span>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="fin">
+                        <a href="#">Plus d'articles</a>
+                    </div>
+                </div>
+
+                <aside class="communiques" aria-labelledby="titre-communiques">
+                    <h3 id="titre-communiques"><span aria-hidden="true">▤</span> Communiqués</h3>
+                    <div class="annonces">
+                        <article class="communique">
+                            <a href="#">
+                                Les « Rendez-vous de la Recherche » – atelier en ligne sur l'appropriation du nouveau guide du CAMES
+                            </a>
+                            <time datetime="2026-10-27">27 octobre 2026</time>
+                        </article>
+                        <article class="communique">
+                            <a href="#">
+                                Lancement officiel du premier rapport national sur l'IA générative dans l'enseignement supérieur sénégalais par le groupe de recherche ALIVE
+                            </a>
+                            <time datetime="2026-10-14">14 octobre 2026</time>
+                        </article>
+                        <article class="communique">
+                            <a href="#">
+                                Prolongation – appel à candidatures pour une admission au Master international « Métiers de l'Édition Scientifique » (MEDITS)
+                            </a>
+                            <time datetime="2026-10-01">1 octobre 2026</time>
+                        </article>
+                        <article class="communique">
+                            <a href="#">
+                                Prolongation exceptionnelle des appels à candidatures pour la formation continue 2025/2026
+                            </a>
+                            <time datetime="2026-09-30">30 septembre 2026</time>
+                        </article>
+                    </div>
+                    <a class="plus" href="#">Plus de communiqués</a>
+                </aside>
+            </div>
+        </section>
+
+        <section class="chiffres" aria-labelledby="titre-chiffres">
+            <div class="titre">
+                <h2 id="titre-chiffres">UN-CHK en chiffres</h2>
+            </div>
+            <div class="donnees">
+                <article class="chiffrevert">
+                    <h3>1ère</h3>
+                    <p>Université publique numérique</p>
+                </article>
+                <article class="chiffrejaune">
+                    <h3>19</h3>
+                    <p>Licences</p>
+                </article>
+                <article class="chiffrebleu">
+                    <h3>26</h3>
+                    <p>Masters</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="etudiants" aria-label="Étudiants de l'UN-CHK">
+            <div class="etudiantgauche" role="img" aria-label="Étudiant souriant"></div>
+            <div class="etudiantcentre" role="img" aria-label="Étudiant souriant"></div>
+            <div class="etudiantdroite" role="img" aria-label="Étudiant souriant"></div>
+        </section>
+
+        <section class="autres" aria-label="Autres chiffres de l'UN-CHK">
+            <div class="effectifs">
+                <article class="statistique">
+                    <h2>73 797</h2>
+                    <p>Étudiants</p>
+                </article>
+                <article class="statistique">
+                    <h2>425</h2>
+                    <p>PATS</p>
+                </article>
+                <article class="statistique">
+                    <h2>536</h2>
+                    <p>Enseignants associés</p>
+                </article>
+                <article class="statistique">
+                    <h2>638</h2>
+                    <p>Tuteurs</p>
+                </article>
+            </div>
+            <div class="details">
+                <a href="#">Plus de chiffres</a>
+            </div>
+        </section>
+
+        <section class="vie" aria-label="Vie étudiante à l'N-CHK">
+            <img src="images/vie-etudiante.png" alt="Vie étudiante, Coupe du Recteur et communauté des étudiants">
+            <a class="coupe" href="#" aria-label="Découvrir la Coupe du Recteur"></a>
+        </section>
+    </section>
+
+    <footer class="footer">
+        <div class="colonnes">
+            <section class="colonne">
+                <h2>À propos de l'UN-CHK</h2>
+                <a href="#">Présentation</a>
+                <a href="#">Gouvernance</a>
+                <a href="#">Organigramme</a>
+                <a href="#">Directions et Pôles</a>
+            </section>
+
+            <section class="colonne">
+                <h2>Nos formations</h2>
+                <a href="#">Formation initiale</a>
+                <a href="#">Formation continue</a>
+            </section>
+
+            <section class="colonne">
+                <h2>Liens utiles</h2>
+                <a href="#">MESRI</a>
+                <a href="#">ANSTS</a>
+                <a href="#">CAMES</a>
+                <a href="#">ANAQ-Sup</a>
+                <a href="#">AUF</a>
+            </section>
+
+            <section class="colonnecontact">
+                <h2>Contact</h2>
+                <p>Cité du savoir – Diamniadio, Castors,<br> avenue Bourguiba, rue n°13</p>
+                <p>
+                    <a href="#">+221 30 108 41 53</a>
+                    –
+                    <a href="#">contact@unchk.edu.sn</a>
+                </p>
+            </section>
+        </div>
+
+        <div class="reseaux">
+            <nav class="social" aria-label="Réseaux sociaux">
+                <a href="#" aria-label="Facebook">f</a>
+                <a href="#" aria-label="X">X</a>
+                <a href="#" aria-label="LinkedIn">in</a>
+                <a href="#" aria-label="Instagram">◎</a>
+                <a href="#" aria-label="YouTube">▶</a>
+            </nav>
+            <p>Foo Nekk Foofu La !</p>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © 2025 UN-CHK. Tous les droits sont réservés.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
